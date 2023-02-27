@@ -1,0 +1,105 @@
+/* Móviles en horizontal o tablets en vertical (responsive) */
+
+@media (max-width: 767px) { 
+    .contenedor{
+        columns:2;
+    }
+
+}
+        
+/* Móviles en vertical (responsive) */
+
+@media (max-width: 480px) {
+    .contenedor{
+        columns: 1;
+    }
+}
+
+
+/* Damos estilo a nuestros elementos */
+
+.elemento:hover img{
+    opacity: 0.5;
+}
+
+.elemento img{
+    height: 350px;
+    width: 250px;
+    border-radius: 5%;
+}
+
+.contenedor{
+    display: grid;      /* Usamos Grid */
+    grid-template-columns: repeat(5,1fr);
+    background-color: white;
+}
+
+.elemento:hover img{
+    opacity: 0.5;
+}
+
+.nav{
+    display: flex;      /* Usamos Flex */
+    justify-content: center;
+    background-color: white;
+    margin: 10px;    
+}
+
+.inputsearch{
+    min-width:800px;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 40px;
+    background-color:azure;
+    border-radius: 20px;
+}
+
+.imagen:hover{
+    opacity: 0.5;
+}
+
+.imagen{
+    padding: 10px;
+}
+
+.inicio{
+    padding: 10px;
+    font-weight: bold;
+    
+}
+
+.hoy{
+    padding: 10px;
+    font-weight: bold;
+}
+
+.crear{
+    padding: 10px;
+    font-weight: bold
+}
+
+.inicio:hover{
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+}
+
+.hoy:hover{
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+}
+
+.crear:hover{
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+}
+
+.botonsearch{
+    height: 40px;
+}
+
+.botonderecho:hover{
+    opacity: 0.5;
+}
